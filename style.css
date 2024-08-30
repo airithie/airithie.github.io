@@ -11,7 +11,7 @@ body {
 
 /* navigation menu */
 nav {
-    background: rgb(255, 167, 195);
+    background: rgb(247, 170, 194);
    margin: 0 auto;
     display: flex;
     padding: 10px;
@@ -37,7 +37,7 @@ a {
 
 /* main container area beneath menu */
 main {
-    background: rgb(255, 246, 220);
+    background: rgb(255, 255, 255);
     display: flex;
 }
 .sidebar {
@@ -54,9 +54,34 @@ main {
 
 /* portfolio styles */
 #interests {
-    border: 4px silver ridge;
-    padding: 8px;
+    border: 4px rgb(255, 216, 229) ridge;
+    padding: 12px;
 }
 h2, h3 {
     margin: 0px;
+}
+ /* portfolio styles */
+ .content h1 {
+    color: rgb(255, 187, 202);
+}
+
+#portfolio {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#portfolio li {
+    background: #ffcbd7;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#portfolio li:hover {
+    background: #feabc4;
+}
+
+#portfolio a {
+    text-decoration: none;
+    color: #ffffff;
 }
