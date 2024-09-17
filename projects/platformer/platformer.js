@@ -54,6 +54,7 @@ $(function () {
     // example usage: createCollectable(type, x, y, gravity, bounce)
     createCollectable('star',980,100,0,0);
     createCollectable('star',780,600,0,0)
+    createCollectable('star',385,355,0,0)
 
 
 
@@ -65,6 +66,7 @@ $(function () {
     // example usage: createCannon(side, position, delay, width, height)
     createCannon("left",50,950)
     createCannon("right",700,940)
+    createCannon("right",450,900)
 
 
     
