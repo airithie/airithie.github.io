@@ -17,7 +17,7 @@
 			position: absolute;
 			top: 100px;
 			/* Change me! */
-			left: 0px;
+			left: 400px;
 		}
 
 		.board {
@@ -66,7 +66,9 @@
 			//////////////////////////////////////////////////////////////////
 
 			// TODO 2 - Variable declarations 
-
+			var positionX = 0;
+			var points = 0;
+			var speed = 10;
 
 
 			/* 
@@ -75,6 +77,14 @@
 			turn it around! 
 			*/
 			function update() {
+				positionX = positionX + speed;
+				moveBoxTo(positionX);
+				if (positionX > boardWidth) {
+					speed *= -1;
+				}
+				if (positionX < 0) {
+					speed = math.abs(speed);
+				}
 
 
 			};
@@ -85,6 +95,14 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
+				positionX = 0;
+				points = points + 1;
+				if (speed >0){
+					speed +=3;
+				} else if (speed <0){
+					speed -=3;
+				}
+				changeBoxText(points);
 
 
 			};
